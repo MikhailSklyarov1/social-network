@@ -1,0 +1,14 @@
+.content {
+    grid-area: c;
+    background-color: #10AA40;
+}
+
+.content img {
+    height:200px;
+    width: 1200px;
+    object-fit:cover;
+}
+
+.item {
+    color: burlywood;
+}
