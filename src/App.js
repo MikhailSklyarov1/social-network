@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import Content from "./components/Content/Content";
+import Dialogs from "./components/Dialogs/Dialogs";
 
 
 
@@ -14,7 +15,8 @@ function App() {
 
         <Nav/>
 
-        <Content/>
+        {/*<Content/>*/}
+        <Dialogs/>
 
     </div>
   );

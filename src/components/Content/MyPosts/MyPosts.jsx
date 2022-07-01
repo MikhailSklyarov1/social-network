@@ -18,9 +18,9 @@ function MyPosts() {
                     New post
                 </div>
                 <div>
-                    <Post/>
-                    <Post/>
-                    <Post/>
+                    <Post message='Hello!' likes='4'/>
+                    <Post message='Second post' likes='7'/>
+                    <Post message='New post' likes='5'/>
                 </div>
             </div>
     );
