@@ -4,8 +4,7 @@ function Post(props) {
     return (
 
         <div className={classes.item}>
-            <img
-                src='https://cdn-icons.flaticon.com/png/512/4140/premium/4140037.png?token=exp=1656092200~hmac=8ecf4fd44960c015728e09114ea4caf7'/>
+            <img src='https://cdn-icons.flaticon.com/png/128/5013/premium/5013735.png?token=exp=1656840141~hmac=99457889f2d722851122c876a2cd51ef'/>
             {props.message}
             <div>
                 {props.likes} likes

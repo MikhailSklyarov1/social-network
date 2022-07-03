@@ -3,26 +3,24 @@ import Post from "./Post/Post";
 
 function MyPosts() {
     return (
-            <div>
-                My posts
+        <div className={classes.postsBlock}>
+            <h3>My posts</h3>
 
+            <div>
                 <div>
                     <textarea>
-
                     </textarea>
-                    <button>Add post</button>
-                    <button>Remove</button>
                 </div>
-
-                <div>
-                    New post
-                </div>
-                <div>
-                    <Post message='Hello!' likes='4'/>
-                    <Post message='Second post' likes='7'/>
-                    <Post message='New post' likes='5'/>
-                </div>
+                <button>Add post</button>
+                <button>Remove</button>
             </div>
+
+            <div className={classes.posts}>
+                <Post message='Hello!' likes='4'/>
+                <Post message='Second post' likes='7'/>
+                <Post message='New post' likes='5'/>
+            </div>
+        </div>
     );
 }
 
