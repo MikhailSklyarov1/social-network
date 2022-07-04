@@ -3,12 +3,12 @@ import Post from "./MyPosts/Post/Post";
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-function Content() {
+function Content(props) {
     return (
         <div>
             <ProfileInfo/>
             <div>
-                <MyPosts/>
+                <MyPosts postsData={props.postsData}/>
             </div>
         </div>
     );
