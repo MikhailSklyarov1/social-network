@@ -9,9 +9,7 @@ function MyPosts(props) {
     const ref = useRef(null);
 
     let addPost = () => {
-        let text = ref.current.value;
-        props.addPost(text);
-        props.updateNewPostText('');
+        props.addPost();
     }
 
     let onPostChange = () => {
