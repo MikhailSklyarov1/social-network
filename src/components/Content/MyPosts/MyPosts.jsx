@@ -3,7 +3,7 @@ import Post from "./Post/Post";
 import {useRef} from "react";
 
 function MyPosts(props) {
-    
+
     let postComponents = props.postsData.map(p => <Post message={p.message} likes={p.likes}/>)
 
     const ref = useRef(null);
@@ -11,6 +11,12 @@ function MyPosts(props) {
     let addPost = () => {
         let text = ref.current.value;
         props.addPost(text);
+        props.updateNewPostText('');
+    }
+
+    let onPostChange = () => {
+        let text = ref.current.value;
+        props.updateNewPostText(text);
     }
 
     return (
@@ -19,8 +25,7 @@ function MyPosts(props) {
 
             <div>
                 <div>
-                    <textarea ref={ref}>
-                    </textarea>
+                    <textarea onChange={onPostChange} value={props.newPostText} ref={ref}/>
                 </div>
                 <button onClick={addPost}>Add post</button>
                 <button>Remove</button>

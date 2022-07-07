@@ -9,7 +9,8 @@ function Content(props) {
         <div>
             <ProfileInfo/>
             <div>
-                <MyPosts postsData={props.postsData} addPost={props.addPost}/>
+                <MyPosts postsData={props.profilePage.posts} newPostText={props.profilePage.newPostText} addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}/>
             </div>
         </div>
     );
