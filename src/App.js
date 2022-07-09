@@ -10,7 +10,6 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import {addPost} from "./redux/state";
 
-
 function App(props) {
   return (
 
